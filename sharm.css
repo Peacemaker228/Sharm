@@ -1,16 +1,19 @@
+
+/* шрифты не работают */
+
 @font-face {
     font-family: 'Playfair Display';
     font-style: italic;
     font-weight: 400;
     font-display: swap;
-    src: url(./fonts/PlayfairDisplay-Italic.ttf) format('truetype'),
+    src: url(./Fonts/PlayfairDisplay-Italic.ttf) format('truetype'),
 }
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(./fonts/PlayfairDisplay.ttf) format('truetype'),
+  src: url(./Fonts/PlayfairDisplay.ttf) format('truetype'),
 }
 @font-face {
   font-family: 'Playfair Display';
@@ -43,6 +46,11 @@
 .all {
     padding-top: 30px;
 }
+header {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
 .messengers {
     display: flex;
     justify-content: flex-end;
@@ -60,7 +68,95 @@
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 20px;
+    font-style: normal;
     letter-spacing: 1.4em;
     line-height: 50px;
     color: #DF96B3;
+}
+.menu {
+    text-align: center;
+    margin-bottom: 25px;
+}
+a.menu_item {
+    margin: 0 35px 0 35px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    text-decoration: none;
+}
+.intro {
+    margin: 0 -160px;
+    background: #F3F3F3;
+    padding: 20px 0 50px 0;
+}
+.title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 155px;
+    color: #000000;
+}
+.t_descrip {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.adornment {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 28px;
+}
+img.ador_items_main {
+    grid-area: 2 / 3 / 4 / 5;
+}
+.blocks {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.white_block {
+    padding: 20px 42px;
+    margin-bottom: 40px;
+    width: 420px;
+    /* max-width: fit-content; */
+    background-color: white;
+    position: absolute;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.cont_title {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    color: black;
+}
+.cont_adorn {
+font-family: 'Playfair Display', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 29px;
+color: #B4957C;
 }
