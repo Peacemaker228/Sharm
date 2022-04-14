@@ -40,8 +40,12 @@
 } */
 
 .sharm {
-    padding-left: 150px;
-    padding-right: 150px;
+    /* padding-left: 150px;
+    padding-right: 150px; */
+    /* для центрирования */
+    /* как решить вопрос с позиционированием */
+    max-width: 1625px;
+    margin: 0px auto;
 }
 .all {
     padding-top: 30px;
@@ -135,28 +139,101 @@ img.ador_items_main {
     align-items: center;
 }
 .white_block {
-    padding: 20px 42px;
+    padding: 30px 42px;
     margin-bottom: 40px;
     width: 420px;
     /* max-width: fit-content; */
     background-color: white;
     position: absolute;
-    max-height: 200px;
+    max-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 .cont_title {
+    line-height: 69%;
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 70px;
     color: black;
 }
 .cont_adorn {
-font-family: 'Playfair Display', serif;
-font-style: normal;
-font-weight: 400;
-font-size: 29px;
-color: #B4957C;
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: #B4957C;
+}
+.twin_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 85px;
+    /* добавлю ширину */
+    width: 100%;
+}
+.open_road {
+    padding: 50px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    text-align: center;
+    margin-bottom: 180px;
+}
+span {
+    font-style: italic;
+    font-weight: 700;
+    color: #a01919;
+    font-size: 85px;
+}
+.last {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.mini_white {
+    padding: 32px 10px 32px 20px;
+    /* margin-bottom: 40px; */
+    width: 171px;
+    background-color: white;
+    position: absolute;
+    max-height: 150px;
+}
+.mini_title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+/* .twin_block:last-child {
+    align-self: flex-start
+} */
+div#sorry {
+    justify-content: flex-start;
+}
+footer {
+    background: #E2E1E1;
+}
+
+.sharm_foot {
+    display: flex;
+}
+.main_foot {
+    text-align: center;
+}
+.foot_messengers {
+    background: #F3F3F3;
+}
+.foot_menu {
+    text-align: center;
+}
+a.foot_menu_items {
+    text-decoration: none;
+    color: #000000;
 }
