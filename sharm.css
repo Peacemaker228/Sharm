@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/PlayfairDisplay-Italic.ttf) format('truetype'),
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/PlayfairDisplay.ttf) format('truetype'),
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style:normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./fonts/PlayfairDisplay.ttf) format('truetype'),
+}
+@font-face {
+    font-family: 'Playfair Display';
+    font-style:italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./fonts/PlayfairDisplay-Italic.ttf) format('truetype'),
+  }
+/* @font-face {
+    font-family: 'Montserrat';
+    font-style:normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local('Playfair Display'),
+         url(./fonts/Rubik-regular.ttf) format('truetype'),
+  
+} */
+
+.sharm {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.all {
+    padding-top: 30px;
+}
+.messengers {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.social {
+    margin-left:  37px;
+}
+.ls {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.4em;
+    line-height: 50px;
+    color: #DF96B3;
+}
