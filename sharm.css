@@ -29,38 +29,33 @@
     font-display: swap;
     src: url(./fonts/PlayfairDisplay-Italic.ttf) format('truetype'),
   }
-/* @font-face {
-    font-family: 'Montserrat';
-    font-style:normal;
-    font-weight: 900;
-    font-display: swap;
-    src: local('Playfair Display'),
-         url(./fonts/Rubik-regular.ttf) format('truetype'),
-  
-} */
 
 .sharm {
-    /* padding-left: 150px;
-    padding-right: 150px; */
+    padding-left: 150px;
+    padding-right: 150px;
     /* для центрирования */
     /* как решить вопрос с позиционированием */
-    max-width: 1625px;
-    margin: 0px auto;
+    /* max-width: 1625px;
+    margin: 0px auto; */
 }
 .all {
     padding-top: 30px;
 }
-header {
+
+.header_container {
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 .messengers {
     display: flex;
     justify-content: flex-end;
     align-items: end;
 }
-
+.messengers_list {
+    list-style: none;
+}
 .social {
     margin-left:  37px;
 }
@@ -68,7 +63,7 @@ header {
     /* display: flex;
     justify-content: center; */
     text-align: center;
-    margin: 40px 0;
+    margin: 30px 0 40px 0;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 20px;
@@ -76,11 +71,32 @@ header {
     letter-spacing: 1.4em;
     line-height: 50px;
     color: #DF96B3;
+    position: relative;
+}
+.ls::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 386px;
+    height: 2px;
+    background-color: #DF96B3;
+    left: 50%;
+    transform: translateX(-54%);
+    border-radius: 5px;
 }
 .menu {
     text-align: center;
     margin-bottom: 25px;
 }
+.menu_list {
+    list-style: none;
+    margin: 0;
+}
+
+ul.menu_list li {
+    display: inline;
+}
+
 a.menu_item {
     margin: 0 35px 0 35px;
     font-family: 'Playfair Display', serif;
@@ -184,6 +200,7 @@ img.ador_items_main {
     text-align: center;
     margin-bottom: 180px;
 }
+/* наследование */
 span {
     font-style: italic;
     font-weight: 700;
