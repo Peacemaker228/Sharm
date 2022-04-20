@@ -38,17 +38,8 @@ body {
     margin: 0;
     padding: 0 15px;
 }
-.sharm {
-    padding-left: 150px;
-    padding-right: 150px;
-    /* для центрирования */
-    /* как решить вопрос с позиционированием */
-    /* max-width: 1625px;
-    margin: 0px auto; */
-}
-.all {
-    padding-top: 30px;
-}
+
+/* header */
 
 .header_container {
     max-width: 1620px;
@@ -125,6 +116,8 @@ a.menu_item {
     color: #000000;
     text-decoration: none;
 }
+
+/* intro */
 .intro__line {
     background: #F3F3F3;
 }
@@ -385,10 +378,7 @@ div#sorry {
     justify-content: flex-start;
 }
 
-/* footer */
-footer {
-    
-}
+
 
 .footer__container {
     max-width: 1620px;
@@ -457,9 +447,9 @@ ul.foot__messengers {
     align-items: flex-end;
 }
 
-.main__foot {
+/* .main__foot {
     
-}
+} */
 
 .main__foot_container {
     max-width: 1620px;
@@ -480,9 +470,9 @@ ul.foot__messengers {
     margin: 52px 0 23px 0;
 }
 
-.foot__menu_list {
-    /* display: inline; */
-}
+/* .foot__menu_list {
+    display: inline;
+} */
 
 
 a.foot__menu_items {
