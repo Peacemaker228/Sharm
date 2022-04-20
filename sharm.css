@@ -1,5 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/* шрифты не работают */
 
 @font-face {
     font-family: 'Playfair Display';
@@ -30,6 +33,11 @@
     src: url(./fonts/PlayfairDisplay-Italic.ttf) format('truetype'),
   }
 
+
+body {
+    margin: 0;
+    padding: 0;
+}
 .sharm {
     padding-left: 150px;
     padding-right: 150px;
@@ -43,19 +51,30 @@
 }
 
 .header_container {
-    max-width: 1140px;
+    max-width: 1620px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding-top: 45px;
 }
+
+ul.messengers_list {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    list-style-type: none;
+}
+
 .messengers {
     display: flex;
     justify-content: flex-end;
-    align-items: end;
+    align-items: flex-end;
 }
-.messengers_list {
-    list-style: none;
+
+.messengers_items {
+    margin-left: 37px;
 }
+
 .social {
     margin-left:  37px;
 }
@@ -81,7 +100,7 @@
     height: 2px;
     background-color: #DF96B3;
     left: 50%;
-    transform: translateX(-54%);
+    transform: translateX(-53%);
     border-radius: 5px;
 }
 .menu {
@@ -108,18 +127,28 @@ a.menu_item {
     color: #000000;
     text-decoration: none;
 }
-.intro {
-    margin: 0 -160px;
+.intro__line {
     background: #F3F3F3;
-    padding: 20px 0 50px 0;
 }
+
+.intro {
+    padding: 55px 15px 74px;
+    max-width: 1430px;
+    margin: 0 auto;
+    /* padding: 20px 0 50px 0; */
+    box-sizing: border-box;
+    border-top: 1px solid #DF96B3;
+}
+
 .title {
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 400;
     font-size: 155px;
-    color: #000000;
+    line-height: 86px;
+    /* color: #000000; */
+    margin: 0 0 101px;
 }
 .t_descrip {
     text-align: center;
@@ -127,33 +156,137 @@ a.menu_item {
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
+    /* line-height: 1%; */
     letter-spacing: 0.01em;
     color: #000000;
-    margin-top: 40px;
+    margin: 0;
 }
 
-.content {
+/* .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 90px;
+} */
+.adornment {
+    padding-top: 100px;
+    box-sizing: border-box;
 }
 
-.adornment {
+.adornment__container {
+    width: 1620px;
+    margin: 0 auto;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 28px;
+    box-sizing: border-box;
+
 }
-img.ador_items_main {
+.content__card_main {
     grid-area: 2 / 3 / 4 / 5;
 }
+
+
+/* Делаем перевертыши */
+
+.content__card {
+    cursor: pointer;
+    position: relative;
+
+}
+
+.front {
+    transform: perspective(600px) rotateY(0deg);
+    backface-visibility: hidden;
+    transition: transform .6s;
+    perspective: 600px;
+    position: absolute;
+}
+
+
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #f6f6f6;
+    transition: transform .6s;
+    box-sizing: border-box;
+}
+
+h2.back__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 20px;
+    /* identical to box height, or 77% */
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 58px;
+}
+
+p.back__description {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    /* or 118% */
+
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+
+.ador_items {
+    width: 100%;
+    height: 100%;
+}
+
+
+.back__content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Playfair Display';
+}
+
+.content__card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.content__card:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+/*  */
+
 .blocks {
-    margin-top: 85px;
+    margin-top: 100px;
+
+}
+
+.blocks__container {
+    width: 1620px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
+
 .white_block {
     padding: 30px 42px;
     margin-bottom: 40px;
@@ -182,15 +315,19 @@ img.ador_items_main {
     font-size: 35px;
     color: #B4957C;
 }
-.twin_block {
+.twin-block {
+    margin-top: 100px;
+}
+
+.twin-block__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 85px;
-    /* добавлю ширину */
-    width: 100%;
+    width: 1620px;
+    margin: 0 auto;
 }
+
 .open_road {
     padding: 50px;
     font-family: 'Playfair Display';
@@ -198,7 +335,7 @@ img.ador_items_main {
     font-weight: 400;
     font-size: 53px;
     text-align: center;
-    margin-bottom: 180px;
+    margin-bottom: 125px;
 }
 /* наследование */
 span {
@@ -234,23 +371,114 @@ span {
 div#sorry {
     justify-content: flex-start;
 }
+
+/* footer */
 footer {
-    background: #E2E1E1;
+    
 }
 
-.sharm_foot {
+.footer__container {
+    max-width: 1620px;
+    margin: 0 auto;
+    background: #E2E1E1;
+    padding-top: 32px;
+    /* display: flex; */
+}
+
+.footer__sharm {
+    background: #F3F3F3;
+    /* padding-top: 32px; */
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.main_foot {
-    text-align: center;
+
+.sharm {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 270px;
+    line-height: 86px;
+    color: #E2E1E1;
+    padding: 0;
+    /* margin-top: 36px; */
+    /* height: 00%; */
+    /* padding-top: 11px; */
+    /* margin-bottom: 65px; */
+    padding-top: 35px;
+    height: 181px;
 }
+
+/* .sharm {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 270px;
+    line-height: 152px;
+    color: #E2E1E1;
+    padding: 0;
+
+    margin-bottom: 65px;
+    padding-bottom: 0;
+} */
+    /* margin-top: 36px; */
+    /* height: 00%; */
+    /* padding-top: 11px; */
+
+/* как лучше? */
 .foot_messengers {
     background: #F3F3F3;
 }
-.foot_menu {
-    text-align: center;
+
+
+
+
+.main__foot {
+    
 }
-a.foot_menu_items {
+
+.main__foot_container {
+    max-width: 1620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #E2E1E1;
+}
+
+.foot__menu {
+    /* text-align: center; */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-top: 29px; */
+    width: 100%;
+    margin: 52px 0 23px 0;
+}
+
+.foot__menu_list {
+    /* display: inline; */
+}
+
+a.foot__menu_items {
     text-decoration: none;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
     color: #000000;
 }
+
+.rights_reserved {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 86px;
+    color: #000000;
+}
+
+
+
