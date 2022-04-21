@@ -139,7 +139,7 @@ a.menu_item {
     font-size: 155px;
     line-height: 86px;
     /* color: #000000; */
-    margin: 0 0 101px;
+    margin: 0 0 90px;
 }
 .t_descrip {
     text-align: center;
@@ -159,6 +159,9 @@ a.menu_item {
     align-items: center;
     margin-top: 90px;
 } */
+
+
+
 .adornment {
     padding-top: 100px;
     box-sizing: border-box;
@@ -378,7 +381,7 @@ div#sorry {
     justify-content: flex-start;
 }
 
-
+/* footer */
 
 .footer__container {
     max-width: 1620px;
