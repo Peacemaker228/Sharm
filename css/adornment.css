@@ -161,6 +161,10 @@ a.menu_item {
 } */
 
 
+/*  */
+
+/* adorn */
+
 
 .adornment {
     padding-top: 100px;
@@ -384,11 +388,15 @@ div#sorry {
 /* footer */
 
 .footer__container {
-    max-width: 1620px;
-    margin: 0 auto;
+    /* max-width: 1620px; */
+    /* margin: 0 auto; */
     background: #E2E1E1;
     padding-top: 32px;
     /* display: flex; */
+}
+
+.footer__container_light {
+    background: #F3F3F3;
 }
 
 .footer__sharm {
@@ -398,6 +406,8 @@ div#sorry {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1620px;
+    margin: 0 auto;
 }
 
 .sharm {
