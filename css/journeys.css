@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body {
+  padding: 0 10px;
+}
 /* header */
 
 .header_container {
@@ -209,12 +212,21 @@ a.menu_item {
     transition: 1s;
     display: block;
 }
+.main__link img {
+  width: 100%;
+  height: 100%;
+}
+
 .main__link img:hover {
     transform: scale(1.2);
 }
 
 .hash__trend_text {
   max-width: 100%;
+}
+
+.hash_trend_items img {
+  width: 100%;
 }
 
 

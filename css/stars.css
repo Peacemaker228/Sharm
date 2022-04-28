@@ -221,6 +221,10 @@ p.depp__text {
   justify-content: space-between;
   margin: 56px 0;
 }
+.story__content img {
+    height: 100%;
+    max-width: 100%;
+}
 
 .content__main {
   box-sizing: border-box;
@@ -272,7 +276,7 @@ p.depp__text {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 
