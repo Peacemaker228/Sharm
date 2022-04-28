@@ -66,6 +66,8 @@ ul.messengers_list {
 
 ul.menu_list li {
   display: inline;
+  cursor: pointer;
+
 }
 
 a.menu_item {
@@ -78,6 +80,7 @@ a.menu_item {
   letter-spacing: 0.01em;
   color: #000000;
   text-decoration: none;
+
 }
 /*  */
 
