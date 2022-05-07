@@ -800,7 +800,7 @@ a.foot__menu_items {
 }
 
 @media screen and (max-width: 720px) {
-    /* header */
+    /* header-footer */
     .messengers {
         justify-content: center;
 
@@ -830,7 +830,11 @@ a.foot__menu_items {
     .t_descrip {
         font-size: 14px;
     }
-
+    a.foot__menu_items {
+        font-size: 13px;
+        line-height: 33px;
+    }
+    
     /*  */
 
     .blocks__container {
@@ -879,10 +883,6 @@ a.foot__menu_items {
     .mini_photo {
         width: 100%;
     }
-    a.foot__menu_items {
-        font-size: 13px;
-        line-height: 33px;
-    }
 }
 
 @media screen and (max-width: 631px) {
@@ -895,8 +895,6 @@ a.foot__menu_items {
         margin: 0 10px 0 10px;
         line-height: 37px;
     }
-
-
 
     /*  */
 
